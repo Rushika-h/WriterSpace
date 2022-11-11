@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash"
+        >
+    </ImageView>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/satisfy"
+            android:shadowColor="#435ADA"
+            android:text="Writer's Space"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/db"
+            android:textColorHighlight="@color/purple_500"
+            android:textSize="46sp"
+            android:textStyle="normal|italic" />
+</RelativeLayout>

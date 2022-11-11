@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/useris"
+        android:padding="4dp"
+        android:textColor="@color/db"
+        android:textSize="14sp"
+        android:text="User ID:"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/db"
+        android:textStyle="bold"
+        android:id="@+id/user_id"
+        android:textSize="14sp"
+        android:padding="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernm"
+            android:padding="4dp"
+            android:textColor="@color/db"
+            android:textSize="14sp"
+            android:text="Username:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/db"
+            android:id="@+id/user_name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="4dp"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityid"
+        android:padding="4dp"
+        android:textColor="@color/db"
+        android:textSize="14sp"
+        android:text="Activity ID::"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/activity_id"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/db"
+        android:padding="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activitytype"
+            android:padding="4dp"
+            android:textColor="@color/db"
+            android:textSize="14sp"
+            android:text="Activity Type:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/activity_type"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/db"
+            android:padding="4dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postid"
+            android:padding="4dp"
+            android:textColor="@color/db"
+            android:textSize="14sp"
+            android:text="Post ID:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/db"
+            android:id="@+id/post_id"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timestamp"
+            android:padding="4dp"
+            android:textColor="@color/db"
+            android:textSize="14sp"
+            android:text="Time:"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/db"
+            android:id="@+id/time_stamp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_tool"
+        android:background="?android:attr/windowBackground"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_recycler"
+        android:layout_below="@+id/comment_tool"
+        android:layout_above="@+id/bottom_comment"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_comment"
+        android:background="#fff"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/comment_image_profile"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/comment_image_profile"
+            android:id="@+id/add_comment"
+            android:hint="Add a comment..."
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@id/post_comment"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_comment"
+            android:text="POST"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/db"
+            />
+    </RelativeLayout>
+</RelativeLayout>

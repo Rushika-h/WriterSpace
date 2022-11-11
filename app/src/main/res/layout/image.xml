@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/posttoolbar"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="unlabeled"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/close_photo"
+                android:src="@drawable/close"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/posttoolbar"
+        android:orientation="vertical">
+        <ja.burhanrashid52.photoeditor.PhotoEditorView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:id="@+id/img"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtimg"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearl"
+        android:id="@+id/frag"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backg"
+            android:background="@drawable/recordbtn2"
+            android:layout_marginStart="30dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/db"
+            android:text="Choose Image"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/backgroundimg"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:drawableRight="@drawable/backgroundimg" />
+        <Button
+            android:id="@+id/textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/recordbtn2"
+            android:text="Add Text"
+            android:layout_marginLeft="60dp"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/textformat"
+            android:textAlignment="gravity"
+            android:textColor="@color/db"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/backgroundimg" />
+
+    </LinearLayout>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        >
+        <Button
+            android:id="@+id/postimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_layout"
+            android:background="?android:attr/windowBackground"
+            android:text="proceed"
+            android:clickable="true"
+            android:textColor="@color/db"
+            android:drawableTop="@drawable/next"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

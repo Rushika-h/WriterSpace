@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/write"
+        android:layout_width="147dp"
+        android:layout_height="148dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btnlook2"
+        android:clickable="true"
+        android:drawableBottom="@drawable/pen"
+        android:fontFamily="@font/kaushan_script"
+        android:padding="10dp"
+        android:text="Write"
+        android:textAlignment="gravity"
+        android:textColor="@color/db"
+        android:textStyle="italic"></Button>
+
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="147dp"
+        android:layout_height="148dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/btnlook2"
+        android:clickable="true"
+        android:drawableBottom="@drawable/mic"
+        android:drawablePadding="0dp"
+        android:fontFamily="@font/kaushan_script"
+        android:padding="15dp"
+        android:text="Record"
+        android:textAlignment="gravity"
+        android:textColor="@color/db"
+        android:textStyle="italic"></Button>
+    <Button
+        android:id="@+id/photo"
+        android:layout_width="149dp"
+        android:layout_height="146dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="480dp"
+        android:background="@drawable/btnlook2"
+        android:clickable="true"
+        android:drawableBottom="@drawable/image"
+        android:fontFamily="@font/kaushan_script"
+        android:padding="15dp"
+        android:text="Photo-Text"
+        android:textAlignment="gravity"
+        android:textColor="@color/db"
+        android:textStyle="italic"></Button>
+
+    </RelativeLayout>

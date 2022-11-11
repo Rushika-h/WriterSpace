@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.writerspace.write"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearwrite"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/frame_layout">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/text"
+        android:singleLine="false"
+        android:hint="@string/write_here"
+        android:background="?android:attr/windowBackground"
+        />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@color/db"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:visibility="gone"></TextView>
+        <TextView
+            android:id="@+id/timeMins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="300dp"
+            android:textColor="@color/db"
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:visibility="gone"
+            android:layout_marginLeft="300dp"></TextView>
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/bottom"
+    android:id="@+id/linearwrite"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteblue"
+        android:id="@+id/wc"
+        android:text="Character Count"
+        android:visibility="gone"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/timer"
+        android:background="@color/whiteblue"
+        android:text="Timer"
+        android:visibility="gone"
+        >
+
+    </Button>
+
+</LinearLayout>
+<androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:labelVisibilityMode="unlabeled"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/toolbar"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_write"
+        android:src="@drawable/close"
+        />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom"
+        >
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frame_layout"
+        android:layout_weight="0.5"
+        android:background="?android:attr/windowBackground"
+        android:clickable="true"
+        android:drawableTop="@drawable/next"
+        android:padding="5dp"
+        android:text="Proceed "
+        android:textColor="@color/db" />
+        </LinearLayout>
+</RelativeLayout>

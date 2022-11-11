@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?android:attr/windowBackground"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:src="@drawable/search"
+            />
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_bar"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_alignEnd="@+id/search"
+                android:layout_toStartOf="@+id/explore"
+                android:background="@android:color/transparent"
+                android:hint="Search"
+                android:layout_toLeftOf="@+id/explore"
+                android:layout_alignRight="@+id/search"
+                tools:ignore="NotSibling" />
+            <Button
+                android:id="@+id/explore"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="?android:attr/windowBackground"
+                android:drawableEnd="@drawable/explore_btn"
+                android:drawableRight="@drawable/explore_btn"
+                android:padding="10dp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/frame"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview"/>
+
+    </FrameLayout>
+    </RelativeLayout>

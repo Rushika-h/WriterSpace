@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+    <style name="LabelStyle">
+        <item name="android:background">@drawable/label</item>
+        <item name="android:text">#1338BE</item>
+    </style>
+    <style name="fontstyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColorHighlight">@color/purple_500</item>
+        <item name="android:fontFamily">@font/satisfy</item>
+        <item name="android:textStyle">normal|italic</item>
+    </style>
+    <style name="headings">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
